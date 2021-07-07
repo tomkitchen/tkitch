@@ -4,7 +4,7 @@ terraform {
     organization = "tkitch"
 
     workspaces {
-      prefix = "app-"
+      prefix = "init-"
     }
   }
 }
