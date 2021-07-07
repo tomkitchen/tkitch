@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 resource "aws_vpc" "test_vpc" {
-  cidr_block = var.environments.${var.environment}.cidr_block
+  cidr_block = var.environments[environment].cidr_block
   tags = {
     Name = var.environment
   }
