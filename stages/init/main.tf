@@ -4,7 +4,7 @@ terraform {
     organization = "tkitch"
 
     workspaces {
-      name = "add-dev"
+      name = "app-dev"
     }
   }
 }
