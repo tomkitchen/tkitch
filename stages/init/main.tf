@@ -4,7 +4,7 @@ terraform {
     organization = "tkitch"
 
     workspaces {
-      name = "app-dev"
+      prefix = "app-"
     }
   }
 }
@@ -15,4 +15,7 @@ provider "aws" {
 
 resource "aws_vpc" "test_vpc" {
   cidr_block = "10.0.0.0/16"
+  tags = {
+    Name = var.environment
+  }
 }
